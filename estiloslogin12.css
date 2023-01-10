@@ -1,0 +1,56 @@
+nav {
+    margin: 1px auto 0;
+    position: relative;
+    width: 910px;   
+    height: 70px;
+    background-color: black;
+    border-radius: 80px;
+    font-size: 0;
+}
+nav a {
+    line-height: 80px;
+    height: 100%;
+    font-size: 13px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 300px;
+}
+a:nth-child(1) {
+    width: 300px;
+}
+a:nth-child(2) {
+    width: 300px;
+}
+a:nth-child(3) {
+    width: 300px;
+}
+
+nav .start-home, a:nth-child(1):hover~.animation {
+    width: 300px;
+    left: 0;
+    background-color: #bdec13;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+    width: 300px;
+    left: 300px;
+    background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+    width: 300px;
+    left: 610px;
+    background-color: #3498db;
+}
+
